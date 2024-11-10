@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Snake Game</title>
+  <link rel="stylesheet" href="style.css">
+
+<style>
+    body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+}
+
+#game-container {
+  position: relative;
+}
+
+canvas {
+  border: 1px solid white;
+}
+
+#score-container {
+  margin-top: 20px;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #555;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #777;
+}
+
+button:focus {
+  outline: none;
+}
+
+</style>
+
+</head>
+<body>
+  <div id="game-container">
+    <h1>Snake Game</h1>
+    <canvas id="gameCanvas" width="400" height="400"></canvas>
+    <div id="score-container">
+      <p>Score: <span id="score">0</span></p>
+      <p>High Score: <span id="highScore">0</span></p>
+    </div>
+    <button id="retryBtn" onclick="retryGame()">Retry</button>
+  </div>
+
+  <script src="snakeadv.js"></script>
+</body>
+</html>
